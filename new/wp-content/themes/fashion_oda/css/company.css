@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* sec_ttl
+--------------------------------*/
+.sec_ttl_bg.company::after{
+	background-image: url(../img/company/ttl_bg.jpg);
+}
+
+/* app
+--------------------------------*/
+.sec_app .lead {
+	text-align: center;
+	padding-bottom: 56px;
+}
+.sec_app .att {
+	position: relative;
+	font-size: 1.4rem;
+	padding-left: 22px;
+	padding-bottom: 40px;
+}
+.sec_app .att:after {
+	content: '\203B';
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #F4BEB8;
+}
+.sec_app .btn_icon.mb {
+	margin-bottom: 40px;
+}
+.sec_app .btn_icon a {
+	border: solid 2px #c6c6c6;
+	border-radius: 5px;
+	background-color: #fff;
+	width: 100%;
+	max-width: 520px;
+	height: 82px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: auto;
+	margin-left: auto;
+}
+.sec_app .btn_icon a .icon {
+	background-color: #c6c6c6;
+	width: 82px;
+	height: 82px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #c6c6c6;
+}
+.sec_app .btn_icon a .txt {
+	width: 438px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.6rem;
+	font-weight: bold;
+	letter-spacing: -0.03em;
+}
+@media screen and (max-width: 767px) {
+	.sec_app .lead {
+		text-align: left;
+		padding-bottom: 8%;
+	}
+	.sec_app .att {
+		padding-left: 6%;
+		padding-bottom: 8%;
+		font-size: 3vw;
+	}
+	.sec_app .btn_icon.mb {
+		margin-bottom: 8%;
+	}
+	.sec_app .btn_icon a {
+		height: 13vw;
+		justify-content: flex-start;
+	}
+	.sec_app .btn_icon a .icon {
+		width: 13vw;
+		height: 13vw;
+	}
+	.sec_app .btn_icon a .icon img {
+		width: 60%;
+		height: auto;
+	}
+	.sec_app .btn_icon a .txt {
+		font-size: 3.5vw;
+		width: auto;
+		justify-content: flex-start;
+		padding-left: 7%;
+	}
+}
+
+
+/* inq
+--------------------------------*/
+.sec_inq{
+	padding-top: 20px;
+}
+.sec_inq .table_type1 table th {
+	width: 50%;
+	text-align: left;
+}
+.sec_inq .table_type1 table caption {
+	background-color: #EC75A2;
+	border-right: solid 1px #e5e5e5;
+	border-left: solid 1px #e5e5e5;
+	border-top: solid 1px #e5e5e5;
+	padding: 20px 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+	.sec_inq{
+		padding-top: 0;
+	}
+	.sec_inq .table_type1 table caption {
+		line-height: 1.4;
+		padding: 3%;
+		text-align: left;
+		font-size: 3.2vw;
+	}
+	.sec_inq .table_type1 table th {
+		width: 43%;
+	}
+	.sec_inq .table_type1 table td {
+		text-align: center;
+	}
+	.sec_inq .table_type1 table td.sp_left {
+		text-align: left;
+	}
+}
+
+/* link
+--------------------------------*/
+.sec_link {
+	padding-top: 0;
+}
+@media screen and (min-width: 768px) {
+	.sec_link .ttl_sec_sub {
+		font-size: 2.8rem;
+		margin-bottom: 25px;
+	}
+	.sec_link .ttl_sec_sub .line {
+		background: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec_inq .ttl_sec_sub {
+		font-size: 2rem;
+		margin-bottom: 25px;
+	}
+	.sec_link .grid2 li:not(:last-child) {
+		margin-bottom: 6%;
+	}
+}

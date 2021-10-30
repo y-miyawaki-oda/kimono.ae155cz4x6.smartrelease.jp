@@ -1,0 +1,68 @@
+/* 
+    Document   : admin
+    Created on :
+    Author     : Ryota Igarashi
+    Description:
+*/
+
+table.mus_option_fields{
+	border-collapse: collapse;
+	margin-top: .5em;
+	width: 100%;
+	clear: both;
+	#accordion .type_title{
+		display:block;
+		width:200px;
+		height:30px;
+		line-height:30px;
+		text-align:center;
+		border:#666 1px solid;
+		cursor:pointer;
+		margin-top: 5px;
+	}
+	#accordion .check_box_list{
+		display:none;
+	}
+	.mus_selected_post{
+		input{
+			margin: 3px 3px 3px 0px;
+		}
+	}
+	.mus_selected_metas{
+		label{
+			vertical-align: inherit;
+		}
+	}
+	.mus_omit_border{
+		input{ 
+			width: 45px;
+		}
+	}
+	.mus_article_max_border{
+		input{ 
+			width: 45px;
+		}
+	}
+	tr{
+		th{
+			vertical-align:top;
+			text-align:left;
+			padding:20px 10px 20px 0;
+			width: 200px;
+			line-height: 1.3;
+			font-weight: 600;
+		}
+		hr{
+			margin: 20px 0px 20px 0px;
+		}
+	}
+	td{
+		.type_title{
+			font-weight: bold;
+			font-size: 15px;
+		}
+		.display_none{
+			display: none;
+		}
+	}
+}

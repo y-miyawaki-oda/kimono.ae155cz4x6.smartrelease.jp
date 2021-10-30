@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* sec_ttl
+--------------------------------*/
+.sec_ttl.lineguidance{
+	background-color: #00B900;
+}
+
+/* sec_intro
+--------------------------------*/
+.sec_intro .grid2{
+	padding: 40px 0 60px;
+}
+.sec_intro div.img.line{
+	text-align: center;
+	margin: 30px auto;
+}
+.sec_intro .txt_wrap .txt small{
+    font-size: 1.2rem;
+	color: #C50000;
+}
+@media screen and (min-width: 768px) {
+	.sec_intro .txt_wrap .txt{
+		text-align: left;
+		margin-top: 40px;
+	}
+	.sec_intro .txt_wrap .txt:first-child{
+		margin-top: 0;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec_intro .grid2 {
+		padding: 8% 0 0;
+	}
+	.sec_intro .txt_wrap .txt small {
+		font-size: 2.7vw;
+	}
+}
+
+/* sec_flow
+--------------------------------*/
+.sec_flow .list li{
+	padding: 60px 0;
+	border-bottom: dotted 1px #a2a2a2;
+}
+.sec_flow .list li:first-child{
+	padding-top: 0;
+}
+.sec_flow .list li,.sec_flow .list li p{
+	text-align: center;
+}
+.sec_flow .list li p small{
+	font-size: 1.2rem;
+	color: #C50000;
+	display: block;
+	margin-top: 15px;
+}
+.sec_flow .list li .img{
+	margin-top: 35px;
+}
+@media screen and (min-width: 768px) {
+	.sec_flow .list li p{
+		line-height: 1.285;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec_flow .list .ttl_28{
+		font-size: 4.2vw;
+	}
+	.sec_flow .list li p small {
+		font-size: 3vw;
+		margin-top: 5%;
+	}
+	.sec_flow .list li .img{
+		margin-top: 6%;
+	}
+	.sec_flow .list li{
+		padding: 9% 0 12%;
+		border-bottom: dotted 1px #a2a2a2;
+	}
+}
+
+/* sec_other
+--------------------------------*/
+.sec_other .other_link {
+	max-width: 560px;
+	margin: 0 auto 40px;
+}
+.sec_other .list li {
+    max-width: 250px;
+}
+.sec_other .list li a {
+    display: block;
+}
+.sec_other .list .img {
+    position: relative;
+    width: 96%;
+}
+.sec_other .list .img::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #EC75A2;
+}
+.sec_other .list .img img {
+    position: relative;
+    z-index: 1;
+}
+.sec_other .list p {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.sec_other .other_link {
+		max-width: inherit;
+		margin-bottom: 5%;
+	}
+	.sec_other .list li {
+		max-width: inherit;
+	}
+	.sec_other .list p {
+		font-size: 3.2vw;
+    	line-height: 1.5;
+		margin-top: 8%;
+	}
+
+}

@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+.sec_ttl{
+	background: url(../img/column/ttl_bg.jpg) no-repeat center center /cover;
+}
+
+/* column
+--------------------------------*/
+.sec_column .link_list {
+	margin-bottom: 100px;
+}
+.sec_column .link_list a .img{
+	position: relative;
+}
+.sec_column .link_list a .img img {
+	width: 100%;
+}
+.sec_column .link_list a .img img:not(.size){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	font-family: 'object-fit: cover; object-position: center;'
+}
+.sec_column .link_list a {
+	display: block;
+}
+.sec_column .link_list a .txt {
+	min-height: 92px;
+	background-color: #191919;
+	color: #fff;
+	font-size: 2.2rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	padding: 10px 112px 10px 20px;
+	position: relative;
+}
+.sec_column .link_list a .txt::before {
+	content: '';
+	width: 92px;
+	height: 100%;
+	min-height: 92px;
+	background-color: #F4ACC7;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.sec_column .link_list a .txt::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	width: 32px;
+	height: 9px;
+	border-bottom: 2px solid #191919;
+	border-right: 2px solid #191919;
+	transform: skew(45deg) translateY(-50%);
+}
+@media screen and (max-width: 767px) {
+	.sec_column .link_list {
+		margin-bottom: 18%;
+	}
+	.sec_column .link_list a .txt {
+		font-size: 3.5vw;
+		min-height: auto;
+		min-height: 13vw;
+		padding: 5% 20% 5% 5%;
+	}
+	.sec_column .link_list a .txt::before {
+		width: 13vw;
+		height: 100%;
+		min-height: auto;
+	}
+	.sec_column .link_list a .txt::after {
+		right: 5%;
+		width: 5vw;
+		height: 1.5vw;
+	}
+}
+
+
+/* detail
+--------------------------------*/
+.sec_detail{
+	padding-bottom: 20px;
+}
+.sec_detail:last-child{
+	padding-bottom: 80px;
+}
+.sec_detail .tag{
+	font-size: 1.8rem;
+	margin-top: 45px;
+	display: none;
+}
+.sec_detail .ttl{
+	color: #3C3737;
+	font-size: 4.8rem;
+	font-weight: bold;
+	line-height: 1.2;
+	position: relative;
+	padding: 0 .5em .5em 2em;
+	border-bottom: 1px solid #EC75A2;
+	/* padding-bottom: .5em;
+	text-align: center; */
+}
+.sec_detail .ttl::before,
+.sec_detail .ttl::after {
+	/* display: none; */
+	position: absolute;
+	content: '';
+	border-radius: 100%
+}
+.sec_detail .ttl::before {
+	top: .2em;
+	left: .2em;
+	z-index: 2;
+	width: 18px;
+	height: 18px;
+	background: rgba(150, 150, 150, .5);
+}
+.sec_detail .ttl::after {
+	top: .7em;
+	left: .7em;
+	width: 13px;
+	height: 13px;
+	background: rgba(210, 210, 210, .5);
+}
+.sec_detail .cnt{
+	margin-top: 30px;
+	/* padding-bottom: 100px;
+	background: bottom center url(../img/wave.jpg) no-repeat; */
+}
+.sec_detail .cnt img{
+	display: block;
+	margin: 40px auto 0;
+}
+.sec_detail .cnt p{
+	font-size: 1.8rem;
+	line-height: 1.78;
+}
+.sec_detail .cnt p:not(:first-child){
+	margin-top: 30px;
+}
+.sec_detail .cnt h3{
+	font-size: 1.8rem;
+	line-height: 2.1;
+	font-weight: 700;
+	position: relative;
+	background: #F4ACC7;
+	box-shadow: 0px 0px 0px 5px #F4ACC7;
+	border: dashed 2px white;
+	padding: 0.2em 0.5em;
+	margin-top: 70px;
+	/* color: #3C3737;
+	margin-top: 70px;
+	padding-left: 25px; */
+}
+.sec_detail .cnt h3::before {
+	display: none;
+	position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 10px;
+    height: 100%;
+    background: #EC75A2;
+}
+.sec_detail .cnt h3::after {
+	/* display: none; */
+	position: absolute;
+	content: '';
+	right: -7px;
+	top: -7px;
+	border-width: 0 15px 15px 0;
+	border-style: solid;
+	border-color: #F4ACC7 #fff #F4ACC7;
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.sec_detail .cnt a{
+	color: #EC75A2;
+	text-decoration: underline;
+	transition: opacity .4s;
+}
+.sec_detail .cnt a:hover{
+	opacity: .7;
+}
+.sec_detail .cnt img.alignleft{
+	margin-right: 20px;
+}
+.sec_detail .cnt ul,
+.sec_detail .cnt ul li{
+	list-style: inherit;
+}
+.sec_detail .cnt ul li::before {
+	content: '';
+	width: .4em;
+	height: .4em;
+	display: inline-block;
+	background-color: #95d1c2;
+	border-radius: 50%;
+	margin-top: .7em;
+	vertical-align: top;
+	margin-right: .2em;
+}
+.sec_detail .cnt ol {
+	counter-reset: li_count;
+}
+.sec_detail .cnt ol li::before {
+	counter-increment: li_count;
+	content: counter(li_count)".";
+	color: #95d1c2;
+}
+@media screen and (max-width: 767px) {
+	.sec_detail{
+		padding-bottom: 5%;
+	}
+	.sec_detail:last-child{
+		padding-bottom: 11%;
+	}
+	.sec_detail .tag{
+		font-size: 3.7vw;
+		margin-top: 18%;
+	}
+	.sec_detail .ttl{
+		font-size: 6.9vw;
+		/* padding: 0 .5em .5em 2em; */
+		padding-bottom: 0.5em;
+	}
+	.sec_detail .ttl::before {
+		width: 4.8vw;
+		height: 4.8vw;
+	}
+	.sec_detail .ttl::after {
+		width: 3.47vw;
+		height: 3.47vw;
+	}
+	.sec_detail .cnt{
+		margin-top: 4%;
+	}
+	.sec_detail .cnt img{
+		margin: 4% auto 0;
+		width: auto;
+		max-width: 100%;
+	}
+	.sec_detail .cnt p{
+		font-size: 3.7vw;
+		line-height: 1.6;
+	}
+	.sec_detail .cnt p:not(:first-child){
+		margin-top: 4%;
+	}
+	.sec_detail .cnt h3{
+		font-size: 4vw;
+		margin-top: 13%;
+		line-height: 1.7;
+		padding-left: 10px;
+	}
+	.sec_detail .cnt h3::after {
+		content: '';
+		right: -7px;
+		top: -7px;
+		border-width: 0 15px 15px 0;
+	}
+	.sec_detail .cnt h3::before{
+		width: 3px;
+	}
+	.sec_detail .cnt img.alignleft{
+		margin-right: 3vw;
+	}
+	.sec_detail .cnt ul li::before{
+		margin-top: .5em;
+	}
+}
+
+/* department_opencampus
+--------------------------------*/
+.sec_department_opencampus .other_link {
+	max-width: 560px;
+	margin: 0 auto 40px;
+}
+.sec_department_opencampus .list li {
+    max-width: 250px;
+}
+.sec_department_opencampus .list li a {
+    display: block;
+}
+.sec_department_opencampus .list .img {
+    position: relative;
+    width: 96%;
+}
+.sec_department_opencampus .list .img::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #EC75A2;
+}
+.sec_department_opencampus .list .img img {
+    position: relative;
+    z-index: 1;
+}
+.sec_department_opencampus .list p {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+@media screen and (max-width: 767px) {
+	.sec_department_opencampus .other_link {
+		max-width: inherit;
+		margin-bottom: 5%;
+	}
+	.sec_department_opencampus .list li {
+		max-width: inherit;
+	}
+	.sec_department_opencampus .list p {
+		font-size: 3.2vw;
+    	line-height: 1.5;
+		margin-top: 8%;
+	}
+
+}

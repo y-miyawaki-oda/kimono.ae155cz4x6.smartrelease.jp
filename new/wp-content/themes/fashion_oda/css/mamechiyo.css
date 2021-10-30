@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* sec_ttl
+--------------------------------*/
+.sec_ttl_bg.mamechiyo::after{
+	background-image: url(../img/mamechiyo/ttl_bg.jpg);
+}
+
+/* conference-report
+--------------------------------*/
+.conference-report .ttl_sec_sub {
+	margin-bottom: 1em;
+}
+.conference-report .txt_box .txt {
+	line-height: 1.6;
+}
+.conference-report .txt_box .txt + .txt {
+	margin-top: 1.5em;
+}
+
+/* profile
+--------------------------------*/
+.profile {
+	background: #FCFBF7;
+}
+.profile h4 {
+	text-align: center;
+	font-size: 2.0rem;
+	line-height: 1.6;
+	font-weight: 700;
+	margin-bottom: 1.8em;
+}
+.profile .clm section {
+	display: flex;
+}
+.profile .clm section .img {
+	flex: 40%;
+}
+.profile .clm section .txt_box {
+	flex: 60%;
+	padding-left: 5%;
+}
+.profile .txt {
+	line-height: 1.6;
+}
+.profile .txt + .txt {
+	margin-top: 1em;
+}
+.profile .txt.official {
+	margin-top: 3em;
+}
+.profile .txt.official a {
+	margin-left: 1em;
+	color: #EC75A2;
+}
+.profile .official:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+	.profile {
+		padding: 8vw 0;
+	}
+	.profile h4 {
+		font-size: 4vw;
+	}
+	.profile .clm section {
+		flex-direction: column;
+		align-items: center;
+	}
+	.profile .clm section .img {
+		padding-bottom: 6vw;
+	}
+	.profile .clm section .txt_box {
+		padding-left: unset;
+	}
+}
+
+/* mamechiyo-interview
+--------------------------------*/
+.mamechiyo-interview {
+	padding-bottom: unset;
+}
+
+.mamechiyo-interview .ttl_sec_sub {
+	margin-bottom: 1em;
+}
+
+.mamechiyo-interview .clm {
+	font-size: 2rem;
+	padding-bottom: 3em;
+}
+
+.mamechiyo-interview h4 {
+	font-size: inherit;
+	line-height: 1.6;
+	margin-bottom: 1.5em;
+	padding-left: 2em;
+	position: relative
+}
+
+.mamechiyo-interview h4::before {
+	content: '';
+	position: absolute;
+	top: 0.8em;
+	width: 1.4em;
+	height: 0.15em;
+	left: 0;
+	background: #3C3737;
+}
+
+.mamechiyo-interview .txt {
+	line-height: 1.6;
+	margin-bottom: 2em;
+}
+
+.mamechiyo-interview .txt:last-child {
+	margin-bottom: unset;
+}
+
+.mamechiyo-interview .img {
+	margin-top: 3em;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.mamechiyo-interview .clm {
+		font-size: 4vw;
+	}
+}
+
+/* final
+--------------------------------*/
+.final {
+	font-size: 2rem;
+	padding-top: 3em;
+	border-top: 1px dotted #A2A2A2;
+}
+.final .txt {
+	line-height: 1.6;
+	text-align: center;
+}
+
+.final .txt + .txt {
+	margin-top: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+	.final {
+		font-size: 4vw;
+	}
+	.final .txt {
+		text-align: left;
+	}
+}

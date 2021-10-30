@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/* sec_ttl
+--------------------------------*/
+.sec_ttl_bg.parent::after{
+	background-image: url(../img/parent/ttl_bg_back.jpg);
+}
+
+/* curriculum
+--------------------------------*/
+.sec_curriculum .img {
+	text-align: center;
+	margin-bottom: 35px
+}
+.sec_curriculum .txt {
+	padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+	.sec_curriculum .txt {
+		padding-bottom: 8%;
+	}
+}
+
+/* link
+--------------------------------*/
+.sec_link {
+	padding-top: 70px;
+}
+@media screen and (min-width: 768px) {
+	.sec_link .ttl_sec_sub {
+		font-size: 2.8rem;
+		margin-bottom: 25px;
+	}
+	.sec_link .ttl_sec_sub .line {
+		background: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec_link .grid2 li:not(:last-child) {
+		margin-bottom: 6%;
+	}
+	.sec_link {
+		padding-top: 0;
+	}
+}
+
+
+/* sec_ttl
+--------------------------------*/
+/* society_lead
+--------------------------------*/
+.sec_parent_lead .txt:not(:nth-last-of-type(1)) {
+	padding-bottom: 40px;
+}
+.sec_parent_lead .txt a {
+	color: #EA7D73;
+	text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+	.sec_parent_lead .txt {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec_parent_lead .txt:not(:nth-last-of-type(1)) {
+		padding-bottom: 10px;
+	}
+}
+.sec_parent_lead  h4.ttl{
+	text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 576px){
+	.sec_parent_lead  h3.ttl_sec_sub{
+		margin-bottom: 0px!important;
+	}
+	.sec_parent_lead  h4.ttl .line{
+		font-size: 1.7rem;
+	}
+	.sec_parent_lead  h4.ttl{
+		margin-top: 5px!important;
+		margin-bottom: 10px!important;
+	}
+}
+/* society_data
+--------------------------------*/
+.sec_parent_data .img_data {
+	margin-bottom: 56px;
+}
+.sec_parent_data h4 {
+	font-size: 2.8rem;
+	font-weight: bold;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.sec_parent_data .img_data {
+		width: 95%;
+		max-width: 1016px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.sec_parent_data .img_data img {
+		border: solid 1px #707070;
+		width: 47%;
+		max-width: 480px;
+	}
+	.sec_parent_data .table_type1 {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec_parent_data .img_data img:not(:last-child) {
+		margin-bottom: 8%;
+	}
+	.sec_parent_data .img_data {
+		margin-bottom: 14%;
+	}
+	.sec_parent_data h4 {
+		font-size: 5vw;
+		padding-bottom: 6%;
+	}
+}
+
+/* society_voice
+--------------------------------*/
+.sec_parent_voice .clm {
+	padding-bottom: 35px;
+	margin-bottom: 35px;
+	border-bottom: dotted 2px #a2a2a2;
+}
+.sec_parent_voice .clm:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.sec_parent_voice .clm h4 {
+	font-size: 2.8rem;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 25px;
+}
+.sec_parent_voice .clm .img {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.sec_parent_voice .clm .name {
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-align: center;
+}
+.sec_parent_voice .clm .history {
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+	.sec_parent_voice .clm {
+		padding-bottom: 11%;
+		margin-bottom: 11%;
+	}
+	.sec_parent_voice .clm h4 {
+		font-size: 5vw;
+		padding-bottom: 6%;
+	}
+	.sec_parent_voice .clm .img {
+		margin-bottom: 6%;
+	}
+	.sec_parent_voice .clm .name {
+		text-align: left;
+		font-size: 4.5vw;
+	}
+	.sec_parent_voice .clm .history {
+		text-align: left;
+		font-size: 4vw;
+		padding-bottom: 0;
+	}
+}

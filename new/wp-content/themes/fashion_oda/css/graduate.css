@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* sec_ttl
+--------------------------------*/
+.sec_ttl_bg.graduate::after{
+	background-image: url(../img/graduate/ttl_bg.jpg);
+}
+
+/* list_dot
+--------------------------------*/
+.section .list_dot li {
+	margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+	.section .list_dot li {
+		margin-top: 2%;
+	}
+}
+
+/* number_list
+--------------------------------*/
+.number_list {
+	counter-reset : item ;
+}
+.number_list li {
+	position: relative;
+	padding-left: 25px;
+	margin-top: 10px;
+}
+.number_list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: counters(item, "．") "．";
+	counter-increment: item ;
+	color: #EC75A2;
+}
+.list_dot li:before{
+	color: #EC75A2!important;
+}
+.note_indent:before{
+	color: #EC75A2!important;
+}
+@media screen and (max-width: 767px) {
+	.number_list li {
+		padding-left: 4%;
+	}
+}
+
+/* note_indent
+--------------------------------*/
+.section .note_indent {
+	margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+	.section .note_indent {
+		margin-top: 2%;
+	}
+}
+
+/* red
+--------------------------------*/
+.section .red {
+	margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+	.section .red {
+		margin-top: 2%;
+	}
+}
+
+
+/* sec_graduate
+--------------------------------*/
+.sec_graduate{
+	padding-top: 40px;
+}
+.sec_graduate .ttl_page {
+	margin-bottom: 56px;
+}
+.sec_graduate .clm {
+	padding-bottom: 100px;
+}
+.sec_graduate .clm:nth-last-of-type(1) {
+	padding-bottom: 0;
+}
+.sec_graduate .table_type1 table th {
+	width: 50%;
+	text-align: left;
+}
+.sec_graduate .table_type1 table caption {
+	background-color: #EC75A2;
+	border-right: solid 1px #e5e5e5;
+	border-left: solid 1px #e5e5e5;
+	border-top: solid 1px #e5e5e5;
+	padding: 20px 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+.sec_graduate .clm.clm_days .ann_list {
+	margin-bottom: 25px;
+}
+.sec_graduate .clm.clm_inq .table_type1 {
+	margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (max-width: 767px) {
+	.sec_graduate{
+		padding-top: 0;
+	}
+	.sec_graduate .ttl_page {
+		margin-bottom: 11%;
+	}
+	.sec_graduate .clm {
+		padding-bottom: 18%;
+	}
+	.sec_graduate .table_type1 table caption {
+		padding: 3%;
+		text-align: left;
+		font-size: 3.2vw;
+	}
+	.sec_graduate .table_type1 table th {
+		width: 43%;
+	}
+	.sec_graduate .table_type1 table td {
+		text-align: center;
+	}
+	.sec_graduate .clm.clm_days .ann_list {
+		margin-bottom: 2%;
+	}
+	.sec_graduate .clm.clm_inq .table_type1 {
+		margin-bottom: 6%;
+	}
+}
+
+/* common_other
+--------------------------------*/
+@media screen and (max-width: 768px){
+	.table_type2 table th {
+		width: 6.6%;
+	}
+	.table_type2 > table > tbody > tr > th.tokubetsu {
+		width: 4%;
+	}
+	.list_dot li {
+		text-indent: 0;
+		position: relative;
+	}
+	.list_dot li:before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		margin-right: 8px;
+		border-radius: 4px;
+		position: absolute;
+		left: 0;
+		top: 2.3vw;
+		transform: translateY(-50%);
+		background-color: #EC75A2;
+	}
+}
